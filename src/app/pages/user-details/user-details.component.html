@@ -1,0 +1,22 @@
+
+
+@if(user){
+    <a class=" mx-3 hover:cursor-pointer" routerLink="/home/users">
+        <mat-icon aria-hidden="false" aria-label="Example back icon" class="material-icons-outlined " >arrow_back</mat-icon>
+    </a>
+    <div class=" h-[70%] flex justify-center items-center ">
+        <div class="flex justify-center items-center flex-col w-4/5 md:w-1/2  bg-white shadow-lg rounded-lg relative h-[50%]">
+            <div class=" absolute top-[-25%]">
+                <img [src]="user.avatar" class=" rounded-full h-28 w-28" alt="Profile picture" srcset="">
+            </div>
+            <div class=" text-center mt-6 text-sm md:text-lg flex flex-col gap-4">
+                <p class=" font-bold">{{user.first_name+" "+user.last_name}}</p>
+                <p class=" text-gray-500">{{user.email}}</p>
+            </div>
+        </div>
+    </div>
+}
+@else {
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+}
+

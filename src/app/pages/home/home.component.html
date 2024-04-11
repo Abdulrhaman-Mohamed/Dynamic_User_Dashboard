@@ -1,0 +1,46 @@
+<div
+  class="grid grid-cols-12   rounded-lg w-4/5 h-full m-auto"
+>
+  <aside
+    class="col-span-3 md:col-span-2 h-full bg-white rounded-lg flex flex-col justify-around items-center"
+  >
+    <p class="font-bold flex gap-2 items-center justify-center">
+      <mat-icon aria-hidden="false" aria-label="Example website_Icon icon" class="material-icons-outlined" >signal_cellular_alt</mat-icon>
+      <span class="md:block hidden w-1/2">
+        Website Dashboard
+      </span>
+    </p>
+    <ul class="text-gray-500 flex flex-col gap-5 w-full text-center">
+      <li
+        class="hover:text-blue-500 hover:cursor-pointer hover:bg-gray-300 py-3"
+      >
+      <a routerLink="/home" class=" flex justify-center items-center  gap-1" >
+        <mat-icon aria-hidden="false" aria-label="Example home icon" class="material-icons-outlined" >home</mat-icon>
+        <span class=" hidden md:block">
+          Home
+        </span>
+      </a>
+        
+      </li>
+      <li
+        class="hover:text-blue-500 hover:cursor-pointer hover:bg-gray-300 py-3"
+      >
+      <a routerLink="/home/users" class=" flex justify-center items-center  gap-1">
+        <mat-icon aria-hidden="false" aria-label="Example Award icon" class="material-icons-outlined" >people</mat-icon>
+        <span class=" hidden md:block">
+          Users
+        </span>
+      </a>
+      </li>
+    </ul>
+
+      <ul class="">
+      </ul>
+  </aside>
+  <main class="col-span-9 md:col-span-10 h-full rounded-r-lg bg-[#F8F8FA] overflow-x-auto ">
+    <app-nav-header></app-nav-header>
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+

@@ -1,0 +1,8 @@
+@if(!data){
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+}
+@else {
+<div>
+        <app-user-list [data]="data" (paginatorEvent)="getPageEvent($event)"></app-user-list>
+</div>
+}
